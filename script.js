@@ -192,7 +192,6 @@ button3.classList.remove("button1")
       earth.classList.remove("invis")
       mars.classList.remove("invis")
       jupiter.classList.remove("invis")
-      sat.classList.remove("invis")
     }
    
     if(clicks==50){
@@ -218,7 +217,6 @@ button3.classList.remove("button1")
       mars.classList.add("invis")
       jupiter.classList.add("invis")
       jupiter.classList.remove("jupi")
-      sat.classList.add("invis")
     }
 }
 
