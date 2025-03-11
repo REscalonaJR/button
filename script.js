@@ -194,7 +194,7 @@ button3.classList.remove("button1")
       jupiter.classList.remove("invis")
     }
    
-    if(clicks==50){
+    if(clicks==43){
       texxt.innerHTML = "IVE REACHED MY ULTIMATE STATE"
       button1.classList.add("initial");
       button1.classList.remove("mom_look_im_a_star");
