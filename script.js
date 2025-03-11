@@ -216,6 +216,7 @@ button3.classList.remove("button1")
       earth.classList.add("invis")
       mars.classList.add("invis")
       jupiter.classList.add("invis")
+      jupiter.classList.remove("jupi")
     }
 }
 
