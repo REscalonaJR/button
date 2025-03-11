@@ -83,6 +83,21 @@ animation: MC 1.205s infinite linear
         translateX(625px) rotate(360deg) ;
     }
 }
+.sat{
+    position: absolute;
+    left: 922px;
+    bottom: 500px;
+    animation: sati 147.338s linear infinite;
+}
+@keyframes sati{
+    0%{transform: rotate(0deg)
+        translateX(725px) rotate(0deg);
+    }/*this make planet go roound round*/
+    100%{
+        transform: rotate(360deg)
+        translateX(725px) rotate(360deg) ;
+    }
+}
 
 .invis{
     height: 0px;
