@@ -68,6 +68,21 @@ animation: MC 1.205s infinite linear
         translateX(450px) rotate(360deg) ;
     }
 }
+.jupi{
+    position: absolute;
+    left: 920px;
+    bottom: 500px;
+    animation: jupi 59.356s linear infinite;
+}
+@keyframes jupi{
+    0%{transform: rotate(0deg)
+        translateX(625px) rotate(0deg);
+    }/*this make planet go roound round*/
+    100%{
+        transform: rotate(360deg)
+        translateX(625px) rotate(360deg) ;
+    }
+}
 
 .invis{
     height: 0px;

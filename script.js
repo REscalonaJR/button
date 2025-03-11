@@ -191,7 +191,7 @@ button3.classList.remove("button1")
       venus.classList.remove("invis")
       earth.classList.remove("invis")
       mars.classList.remove("invis")
-      jupiter
+      jupiter.classList.remove("invis")
     }
    
     if(clicks==50){
@@ -215,6 +215,7 @@ button3.classList.remove("button1")
       venus.classList.add("invis")
       earth.classList.add("invis")
       mars.classList.add("invis")
+      jupiter.classList.add("invis")
     }
 }
 
