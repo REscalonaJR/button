@@ -1,0 +1,573 @@
+.sun{
+    height: 130px;
+    position: absolute;
+    /* THIS IS THE SUN*/
+    z-index: 1;
+    left: 870px;
+    bottom: 460px;
+}
+.merc{
+    z-index: 1;
+    position: absolute;
+    /*mercury*/
+    left: 910px;
+    bottom: 500px;
+animation: MC 1.205s infinite linear
+}
+@keyframes MC{
+    0%{transform: rotate(0deg)
+        translateX(150px) rotate(0deg);
+    }/*this make planet go roound round*/
+    100%{
+        transform: rotate(360deg)
+        translateX(150px) rotate(360deg) ;
+    }
+}
+.ven{
+    position: absolute;
+    animation: Dc 3.082s infinite linear;
+    left: 912px;
+    bottom: 500px;
+}
+@keyframes Dc{
+    0%{transform: rotate(0deg)
+        translateX(250px) rotate(0deg);
+    }/*this make planet go roound round*/
+    100%{
+        transform: rotate(360deg)
+        translateX(250px) rotate(360deg) ;
+    }
+}
+.ear{
+    position: absolute;
+    animation: wii 5s infinite linear;
+    left: 914px;
+    bottom: 500px;
+}
+@keyframes wii{
+    0%{transform: rotate(0deg)
+        translateX(350px) rotate(0deg);
+    }/*this make planet go roound round*/
+    100%{
+        transform: rotate(360deg)
+        translateX(350px) rotate(360deg) ;
+    }
+}
+.mar{
+    position: absolute;
+    animation: bar 9.41s linear infinite;
+    left: 916px;/*mars*/
+    bottom: 500px;
+}
+@keyframes bar{
+    0%{transform: rotate(0deg)
+        translateX(450px) rotate(0deg);
+    }/*this make planet go roound round*/
+    100%{
+        transform: rotate(360deg)
+        translateX(450px) rotate(360deg) ;
+    }
+}
+
+.invis{
+    height: 0px;
+    width: 0px;
+    background-color: transparent;
+    border: transparent;
+    box-shadow: 0px 0px 0px 0px
+}
+.cont{
+    height: 1057px;
+    width: 1914px;
+    border: transparent dotted 3px;
+    /*CONTAINER*/
+    z-index: 0;
+    position: absolute;
+    float: right;}
+
+.bg{
+    background-image: url(images/bg.jpg);
+}
+.taco{
+    position: absolute;
+    top: 26%;
+    right: 12%;
+}
+.yeah{
+    left: 78%;
+    top: 69%;
+}
+.button1{
+    height: 200px;
+     width: 200px;
+     border-radius:50% ;
+     background-color: red;
+     box-shadow: 0px 10px 2px 2px;
+     font-size: 25px;
+ }
+ .button1:hover {
+     background-color: rgb(230, 70, 70);
+ }
+ 
+ 
+.initial{
+    position: absolute;
+     top: 40%;
+     left: 40%;
+     
+} 
+.sub1 {
+    transform: translateX(210px)
+    
+}
+.texxt{
+    position: absolute;
+    left: 40%;
+    font-size: 30px;
+} 
+.moverr:hover{
+    animation: circle 0.1ms linear infinite;
+}
+@keyframes circle{
+    0%{transform: rotate(0deg)
+        translateX(350px) rotate(0deg);
+    }/*this make planet go roound round*/
+    100%{
+        transform: rotate(360deg)
+        translateX(350px) rotate(360deg) ;
+    }
+}
+
+.moverr{
+    animation: blitz 0.004ms linear infinite;
+}
+@keyframes blitz{
+    0%{
+        transform: translateY(-600px);
+    }
+    50%{
+        transform: translateX(500px);
+    }
+    100%{
+        transform: translate(-600px)
+    }
+}
+.growshrink{
+    animation: growshrink 2s linear 1;
+    height: 0px;
+    width: 0px;
+    background-color: transparent;
+    border: transparent;
+    box-shadow: 0px 0px 0px 0px
+}
+@keyframes growshrink{
+    0%{ height: 600px;
+    width: 600px;
+    background-color: red;
+    box-shadow: 0px 10px 2px 2px;
+    font-size: 25px;
+    border: 2px;
+    }
+    100%{
+        height: 0px;
+        width: 0px;
+        background-color: transparent;
+    border: transparent;
+    box-shadow: 0px 0px 0px 0px
+    }
+}
+
+
+
+.orbit{
+animation: wii 5s linear infinite;
+}
+@keyframes wii{
+    0%{transform: rotate(0deg)
+        translateX(350px) rotate(0deg);
+    }/*this make planet go roound round*/
+    100%{
+        transform: rotate(360deg)
+        translateX(350px) rotate(360deg) ;
+    }
+}
+.orbit2{
+    animation: wii 1.5s linear infinite;
+    }
+    @keyframes wii{
+        0%{transform: rotate(0deg)
+            translateX(350px) rotate(0deg);
+        }/*this make planet go roound round*/
+        100%{
+            transform: rotate(360deg)
+            translateX(350px) rotate(360deg) ;
+        }
+    }
+    .orbit3{
+        animation: wii 1250ms linear infinite;
+        }
+        @keyframes wii{
+            0%{transform: rotate(0deg)
+                translateX(350px) rotate(0deg);
+            }/*this make planet go roound round*/
+            100%{
+                transform: rotate(360deg)
+                translateX(350px) rotate(360deg) ;
+            }
+        }
+        .stache{
+            width:180px;
+            height:180px;
+            left:29%;
+            top: 20%;
+            border-radius:50%;
+            position:absolute;
+            color:black;
+            box-shadow:
+            150px 240px 0 0 currentColor,
+            300px 240px 0 0 currentColor;
+        }
+        .stache::before{
+            content:"";
+            position:absolute;
+            left:30px;
+            top:120px;
+            width:210px;
+            height:120px;
+            border-bottom:solid 180px currentColor;
+            border-radius:0 0 0 100%;
+            transform:rotate(-40deg);
+            transform-origin:right 210px;
+        }
+        .stache::after{
+            content:"";
+            position:absolute;
+            left:390px;
+            top:120px;
+            width:210px;
+            height:120px;
+            border-bottom:solid 180px currentColor;
+            border-radius:0 0 100%0;
+            transform:rotate(40deg);
+            transform-origin:left 210px;
+        }
+        .activated{
+            height: 200px;
+            width: 200px;
+            border-radius:50% ;
+            background-color: red;
+            box-shadow: 0px 10px 2px 2px;
+            top: 80%;
+            left: 80%;
+        } 
+        .running{
+            animation: run 1s linear infinite;
+        }
+        @keyframes run {
+            0%{transform: translateX(0px);}
+            25%{transform: translateX(200px) ;}
+            50%{transform: translateY(200px) translateX(200px);}
+            75%{transform: translateX(-200px) translateY(200px);}
+            100%{transform: translateX(0px) translateY(0px);}
+        }
+.mom_look_im_a_star{
+    position: absolute;
+    left: 1000px;
+    top: 250px;
+    animation: rotate_squaree 6s 15.67s linear infinite;
+    height: 0px;
+    width: 0px;
+    font-size: 0px;
+    background-color: transparent;
+    border: transparent;
+    box-shadow: 0px 0px 0px 0px
+}
+
+
+@keyframes rotate_squaree{
+    0%{ 
+        transform:translateX(0px);
+        height: 70px;
+        width: 70px;
+        border-radius:50% ;
+        background-color: red;
+        box-shadow: 0px 4px 1px 1px;
+        font-size: 15px;
+    }
+    40%{ height: 70px;
+        width: 70px;
+        border-radius:50% ;
+        background-color: red;
+        box-shadow: 0px 4px 1px 1px;
+        font-size: 25px;}
+    50%{transform:translateX(-900px)translateY(700px)rotate(1080deg);height: 0px;
+        width: 0px;
+        background-color: transparent;
+        border: transparent;
+        box-shadow: 0px 0px 0px 0px}
+    51%{background-color: transparent;}/*makes star move*/
+    100%{background-color: transparent;}
+    }
+/* not using this
+.button_trail1
+    position: absolute;
+    left: 1020px;
+    top: 230px;
+    animation: rotate_squar 6s 15.67s linear infinite;
+    z-index: 8;
+
+@keyframes rotate_squar{
+    0%{ transform:translateX(0px);height: 100px;
+        width: 100px;
+        border-radius:50% ;
+        background-color: rgba(255, 0, 0, 0.671);
+        box-shadow: 0px 5px 1px 1px;
+        font-size: 25px; }
+    40%{height: 100px;
+        width: 100px;
+        border-radius:50% ;
+        background-color: rgba(255, 0, 0, 0.61);
+        box-shadow: 0px 10px 2px 2px;
+        font-size: 25px;}
+    50%{transform:translateX(-900px)translateY(700px)rotate(1080deg);background-color:transparent;}
+    51%{background-color: transparent;}
+    100%{background-color: transparent;}
+ }
+ .button_trail2{
+    left: 1040px;
+    position: absolute;
+    top: 210px;
+    animation: rotate_squa 6s 15.67s linear infinite;
+    z-index: 7;
+ }
+ @keyframes rotate_squa{
+    0%{ transform:translateX(0px);height: 100px;
+        width: 100px;
+        border-radius:50% ;
+        background-color: rgba(255, 0, 0, 0.418);
+        box-shadow: 0px 10px 2px 2px;
+        font-size: 25px;}
+    40%{height: 100px;
+        width: 100px;
+        border-radius:50% ;
+        background-color: rgba(255, 0, 0, 0.418);
+        box-shadow: 0px 10px 2px 2px;
+        font-size: 25px;}
+    50%{transform:translateX(-900px)translateY(700px)rotate(1080deg);background-color:transparent;}
+    51%{background-color: transparent;}
+    100%{background-color: transparent;}
+ */
+ .star_a{
+    width: 30px;  /*star*/
+    aspect-ratio: 1;
+    background: transparent;
+    clip-path: polygon(50% 0,
+      calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
+      calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+      calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+      calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn))) 
+     ); 
+    position: absolute;
+    left: 1000px;
+    top: 120px;
+    background-color: transparent; 
+    animation: rotate_square 4s 6s linear infinite;
+    }
+
+    @keyframes rotate_square{
+       0%{ transform:translateX(0px);background-color: gold;}
+       40%{background-color: gold;}
+       50%{transform:translateX(-900px)translateY(700px)rotate(1080deg);background-color:transparent;}
+       51%{background-color: transparent;}/*makes star move*/
+       100%{background-color: transparent;}
+    }
+    .sta_a{
+        width: 30px;  /*star*/
+    aspect-ratio: 1;
+    background:gold;
+    clip-path: polygon(50% 0,
+      calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
+      calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+      calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+      calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn))) 
+     ); 
+    position: absolute;
+    left: 1010px;
+    top: 110px;
+    background-color: transparent;
+    animation: rotate_squar 4s 6s linear infinite;
+    }
+    @keyframes rotate_squar{
+        0%{ transform:translateX(0px);background-color: rgba(255, 217, 0, 0.678);}
+        40%{background-color: rgba(255, 217, 0, 0.61);}
+        50%{transform:translateX(-900px)translateY(700px)rotate(1080deg);background-color:transparent;}
+        51%{background-color: transparent;}/*makes star move*/
+        100%{background-color: transparent;}
+     }
+     .stare_a{
+        width: 30px;  /*star*/
+    aspect-ratio: 1;
+    background: transparent;
+    clip-path: polygon(50% 0,
+      calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
+      calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+      calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+      calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn))) 
+     ); 
+    position: absolute;
+    left: 1020px;
+    top: 100px;
+    border-radius: 50% 25;
+    background-color: transparent;
+    animation: rotate_squa 4s 6s linear infinite;
+     }
+     @keyframes rotate_squa{
+        0%{ transform:translateX(0px);background-color: rgba(255, 217, 0, 0.418);}
+        40%{background-color: rgba(255, 217, 0, 0.418);}
+        50%{transform:translateX(-900px)translateY(700px)rotate(1080deg);background-color:transparent;}
+        51%{background-color: transparent;}/*makes star move*/
+        100%{background-color: transparent;}
+     }
+    
+     .star_b{
+        width: 30px;  /*star*/
+        aspect-ratio: 1;
+        background: transparent;
+        clip-path: polygon(50% 0,
+          calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
+          calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+          calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+          calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn))) 
+         ); 
+        position: absolute;
+        left: 1500px;
+        top: 420px;
+        background-color: transparent; 
+        animation: rotate_square 5s 9s linear infinite;
+        }
+    
+        @keyframes rotate_square{
+           0%{ transform:translateX(0px);background-color: gold;}
+           40%{background-color: gold;}
+           50%{transform:translateX(-900px)translateY(700px)rotate(1080deg);background-color:transparent;}
+           51%{background-color: transparent;}/*makes star move*/
+           100%{background-color: transparent;}
+        }
+        .sta_b{
+            width: 30px;  /*star*/
+        aspect-ratio: 1;
+        background:gold;
+        clip-path: polygon(50% 0,
+          calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
+          calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+          calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+          calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn))) 
+         ); 
+        position: absolute;
+        left: 1510px;
+        top: 410px;
+        background-color: transparent;
+        animation: rotate_squar 5s 9s linear infinite;
+        }
+        @keyframes rotate_squar{
+            0%{ transform:translateX(0px);background-color: rgba(255, 217, 0, 0.678);}
+            40%{background-color: rgba(255, 217, 0, 0.61);}
+            50%{transform:translateX(-900px)translateY(700px)rotate(1080deg);background-color:transparent;}
+            51%{background-color: transparent;}/*makes star move*/
+            100%{background-color: transparent;}
+         }
+         .stare_b{
+            width: 30px;  /*star*/
+        aspect-ratio: 1;
+        background: transparent;
+        clip-path: polygon(50% 0,
+          calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
+          calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+          calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+          calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn))) 
+         ); 
+        position: absolute;
+        left: 1520px;
+        top: 400px;
+        border-radius: 50% 25;
+        background-color: transparent;
+        animation: rotate_squa 5s 9s linear infinite;
+         }
+         @keyframes rotate_squa{
+            0%{ transform:translateX(0px);background-color: rgba(255, 217, 0, 0.418);}
+            40%{background-color: rgba(255, 217, 0, 0.418);}
+            50%{transform:translateX(-900px)translateY(700px)rotate(1080deg);background-color:transparent;}
+            51%{background-color: transparent;}/*makes star move*/
+            100%{background-color: transparent;}
+         }
+         .star_c{
+            width: 30px;  /*star*/
+            aspect-ratio: 1;
+            background: transparent;
+            clip-path: polygon(50% 0,
+              calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
+              calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+              calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+              calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn))) 
+             ); 
+            position: absolute;
+            left: 1200px;
+            top: 270px;
+            background-color: transparent; 
+            animation: rotate_square 6s 14s linear infinite;
+            }
+        
+            @keyframes rotate_square{
+               0%{ transform:translateX(0px);background-color: gold;}
+               40%{background-color: gold;}
+               50%{transform:translateX(-900px)translateY(700px)rotate(1080deg);background-color:transparent;}
+               51%{background-color: transparent;}/*makes star move*/
+               100%{background-color: transparent;}
+            }
+            .sta_c{
+                width: 30px;  /*star*/
+            aspect-ratio: 1;
+            background:gold;
+            clip-path: polygon(50% 0,
+              calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
+              calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+              calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+              calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn))) 
+             ); 
+            position: absolute;
+            left: 1210px;
+            top: 260px;
+            background-color: transparent;
+            animation: rotate_squar 6s 14s linear infinite;
+            }
+            @keyframes rotate_squar{
+                0%{ transform:translateX(0px);background-color: rgba(255, 217, 0, 0.678);}
+                40%{background-color: rgba(255, 217, 0, 0.61);}
+                50%{transform:translateX(-900px)translateY(700px)rotate(1080deg);background-color:transparent;}
+                51%{background-color: transparent;}/*makes star move*/
+                100%{background-color: transparent;}
+             }
+             .stare_c{
+                width: 30px;  /*star*/
+            aspect-ratio: 1;
+            background: transparent;
+            clip-path: polygon(50% 0,
+              calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
+              calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+              calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+              calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn))) 
+             ); 
+            position: absolute;
+            left: 1220px;
+            top: 250px;
+            border-radius: 50% 25;
+            background-color: transparent;
+            animation: rotate_squa 6s 14s linear infinite;
+             }
+             @keyframes rotate_squa{
+                0%{ transform:translateX(0px);background-color: rgba(255, 217, 0, 0.418);}
+                40%{background-color: rgba(255, 217, 0, 0.418);}
+                50%{transform:translateX(-900px)translateY(700px)rotate(1080deg);background-color:transparent;}
+                51%{background-color: transparent;}/*makes star move*/
+                100%{background-color: transparent;}
+             }
